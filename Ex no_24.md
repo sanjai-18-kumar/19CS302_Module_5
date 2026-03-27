@@ -1,25 +1,41 @@
-# EX 24 Create a structure program to read(empno,dept and basic pay) and store the data of 3 employees and calculate their Gross Salary(da =10% and HRA=30% from BP).
-## DATE:
+# EX 23 C program to store and display the name, id, age and salary of an employee using structure(using array of structure).
 ## AIM:
-To Create a structure program to read(empno,dept and basic pay) and store the data of 3 employees and calculate their Gross Salary(da =10% and HRA=30% from BP).
+To write a C program to store and display the name, id, age and salary of an employee using structure(using array of structure).
 
 ## Algorithm
-1. 
-2. 
-3. 
-4.  
-5.   
+1. Start.
+2. Define a variables.
+3. Write program to to store and display the name, id, age and salary of an employee
+using structure(using array of structure).
+4. Read the value using scanf.
+5. Ask the user to make an input.
+6. Print out the answer.
+7. End.  
 
 ## Program:
 ```
-/*
-A structure program to read(empno,dept and basic pay) and store the data of 3 employees and calculate their Gross Salary(da =10% and HRA=30% from BP).
-Developed by: 
-RegisterNumber:  
-*/
+#include<stdio.h>
+struct employee
+{
+int id,age,salary;
+char name[30];
+}emp[100];
+int main()
+{
+int i,n;
+scanf("%d",&n);
+for(i=0;i<n;i++)
+{
+scanf("%d %s %d %d",&emp[i].id,emp[i].name,&emp[i].age,&emp[i].salary);
+}
+printf("Employee Details\n");
+for(i=0;i<n;i++)
+printf("%d %s %d %d\n",emp[i].id,emp[i].name,emp[i].age,emp[i].salary);}
 ```
 
 ## Output:
+
+![image](https://github.com/user-attachments/assets/c110c218-271d-4cb3-976b-d16505f562ee)
 
 
 
